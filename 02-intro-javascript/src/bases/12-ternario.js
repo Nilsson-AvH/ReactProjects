@@ -1,4 +1,4 @@
-//Operador consicional terniario
+//Operador condicional terniario
 
 const activo = true;
 
