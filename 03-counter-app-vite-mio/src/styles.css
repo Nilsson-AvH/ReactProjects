@@ -1,0 +1,30 @@
+html, body{
+    background-color: #1a1a1a;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:antiquewhite;
+    padding: 70px;   
+}
+
+button {
+    border-radius: 8px;
+    border: 1px salmon;
+    background-color: #646cff;
+    padding: 0.6em 1.2em;
+    color: antiquewhite;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin-right: 1rem;
+  }
+  button:hover {
+    border-color: #646cff;
+    background-color: rgb(47, 51, 107);
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
