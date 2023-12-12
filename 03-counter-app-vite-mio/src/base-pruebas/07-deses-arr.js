@@ -5,8 +5,8 @@ const [ , , p3 ] = personajes;
 console.log( p3 );
 
 
-const retornaArreglo = () =>{
-    return ['ABC', 123];
+export const retornaArreglo = () =>{
+    return ['ABCelperro', 123];
 }
 
 const [ letras, numeros ] = retornaArreglo(); 

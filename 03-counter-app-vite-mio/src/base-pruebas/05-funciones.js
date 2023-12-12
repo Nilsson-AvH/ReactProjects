@@ -18,7 +18,7 @@ console.log( saludar3('Goku') );
 console.log( saludar4() );
 
 
-const getUser = () => ({
+export const getUser = () => ({
         uid: 'ABC123',
         username: 'El_Papi1502'
 });
@@ -28,12 +28,12 @@ const user = getUser();
 console.log(user);
 
 // Tarea
-const getUsuarioActivo = ( nombre ) =>({
+export const getUsuarioActivo = ( nombre ) =>({
     uid: 'ABC567',
     username: nombre
 })
 
-const usuarioActivo = getUsuarioActivo('Fernando');
+const usuarioActivo = getUsuarioActivo('Nilson');
 console.log( usuarioActivo );
 
 
