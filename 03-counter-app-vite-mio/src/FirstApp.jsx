@@ -26,7 +26,7 @@ const FirstApp = ( { title, subTitle, name } ) => {
     return (        
         <> {/* Esta es la abreviación de Fragment: <></> */}
 
-        <h1> { title } </h1>
+        <div data-testid="test-title"> { title } </div>
 
         <code> { JSON.stringify( getResult() ) } </code>
 
