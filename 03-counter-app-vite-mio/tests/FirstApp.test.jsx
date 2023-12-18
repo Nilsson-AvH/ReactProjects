@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react"
+import { getAllByAltText, getAllByText, render } from "@testing-library/react"
 import FirstApp from "../src/FirstApp"
 
 describe('Prueba del archivo FirstApp.jsx', () => { 
@@ -24,9 +24,10 @@ describe('Prueba del archivo FirstApp.jsx', () => {
       test('Debe mostrar el subtitulo enviado por prost', () => { 
         const title = 'Hola soy Krillin muriendose.';
         const subTitle = 'Hola soy un subtitulo.';
-
-        const { getByText } =  render ( < FirstApp title={title} subTitle={subTitle} /> );
-        expect( getByText( subTitle ) ).toBeTruthy(); //Verificar que subTitle exista
+        console.log(subTitle.length);
+        const { getAllByText } =  render ( < FirstApp title={title} subTitle={subTitle} /> );
+        // expect( getByText( subTitle ) ).toBeTruthy(); //Verificar que subTitle exista
+        expect( getAllByText(subTitle).length ).toBe(1);
 
        })
     

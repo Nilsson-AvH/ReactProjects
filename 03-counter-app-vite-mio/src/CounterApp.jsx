@@ -20,10 +20,10 @@ export const CounterApp = ({value}) => {
   return (
     <>
     <h1>CounterApp by NAvH</h1>
-    <h1>{counter}</h1>
+    <h2>{counter}</h2>
     <button onClick={handleMas}> + 1 </button>
     <button onClick={handleMenos}> - 1 </button>
-    <button onClick={handleReset}> Reset </button>
+    <button aria-label="btn-reset" onClick={handleReset}> Reset </button>
 
     </>
   )
@@ -36,3 +36,5 @@ CounterApp.propTypes = {
 CounterApp.defaultProps = {
     value: 0
 }
+
+// export default CounterApp;
